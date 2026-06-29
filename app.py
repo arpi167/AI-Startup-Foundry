@@ -2,6 +2,7 @@ from agents.idea_agent import validate_startup_idea
 from agents.market_agent import market_research
 from agents.competitor_agent import competitor_analysis
 from agents.business_model_agent import business_model_analysis
+from agents.financial_agent import financial_analysis
 
 idea = input("Enter Startup Idea: ")
 
@@ -36,3 +37,11 @@ print("="*50)
 business_result = business_model_analysis(idea)
 
 print(business_result)
+
+print("\n" + "="*50)
+print("FINANCIAL PLANNING AGENT")
+print("="*50)
+
+financial_result = financial_analysis(idea)
+
+print(financial_result)

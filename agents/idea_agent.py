@@ -1,34 +1,28 @@
-import os
-from dotenv import load_dotenv
-import google.generativeai as genai
-
-# Load environment variables
-load_dotenv()
-
-# Configure Gemini
-genai.configure(
-    api_key=os.getenv("GEMINI_API_KEY")
-)
-
-# Load model
-model = genai.GenerativeModel("gemini-2.5-flash")
+from utils.gemini_client import model
 
 
 def validate_startup_idea(startup_idea):
+    """
+    Validates a startup idea and returns a structured analysis.
+    """
 
     prompt = f"""
+    You are an experienced startup mentor.
+
     Analyze the following startup idea:
 
+    Startup Idea:
     {startup_idea}
 
-    Provide:
+    Generate a detailed analysis containing:
 
     1. Problem Statement
     2. Target Audience
     3. Key Opportunity
     4. Opportunity Score (1-10)
+    5. Justification for the Score
 
-    Keep the response structured.
+    Format the response using proper markdown headings and bullet points.
     """
 
     response = model.generate_content(prompt)

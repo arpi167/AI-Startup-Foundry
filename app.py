@@ -3,6 +3,7 @@ from agents.market_agent import market_research
 from agents.competitor_agent import competitor_analysis
 from agents.business_model_agent import business_model_analysis
 from agents.financial_agent import financial_analysis
+from agents.pitch_agent import generate_pitch_deck
 
 idea = input("Enter Startup Idea: ")
 
@@ -45,3 +46,11 @@ print("="*50)
 financial_result = financial_analysis(idea)
 
 print(financial_result)
+
+print("\n" + "=" * 50)
+print("PITCH DECK AGENT")
+print("=" * 50)
+
+pitch_result = generate_pitch_deck(idea)
+
+print(pitch_result)

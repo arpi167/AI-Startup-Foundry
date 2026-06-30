@@ -1,0 +1,113 @@
+/* Background */
+
+.main {
+  background: #f8fafc;
+}
+
+/* Main Container */
+
+.block-container {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Hero Banner */
+
+.hero {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  color: white;
+
+  margin-bottom: 30px;
+
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero-title {
+  font-size: 46px;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+
+  opacity: 0.92;
+}
+
+/* Cards */
+
+.metric-card {
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+
+  margin-top: 60px;
+
+  color: gray;
+}
+
+/* Buttons */
+
+.stButton > button {
+  width: 100%;
+
+  height: 55px;
+
+  border-radius: 10px;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+}
+
+.stButton > button:hover {
+  background: #1d4ed8;
+}
+
+/* Text Area */
+
+textarea {
+  font-size: 16px !important;
+}
+
+/* Sidebar */
+
+section[data-testid="stSidebar"] {
+  background: #0f172a;
+}
+
+section[data-testid="stSidebar"] * {
+  color: white;
+}

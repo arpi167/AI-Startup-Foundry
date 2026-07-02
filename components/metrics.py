@@ -3,12 +3,16 @@ import streamlit as st
 
 def metrics():
 
-    c1, c2, c3, c4 = st.columns(4)
+    c1,c2,c3,c4 = st.columns(4)
 
-    c1.metric("🤖 AI Agents", "6")
+    with c1:
+        st.metric("🤖 AI Agents","6","+100%")
 
-    c2.metric("⚡ Model", "Gemini")
+    with c2:
+        st.metric("⚡ AI Model","Gemini","2.5 Flash")
 
-    c3.metric("💼 Domain", "Business")
+    with c3:
+        st.metric("💼 Startup Focus","Business","Enterprise")
 
-    c4.metric("⭐ AI Score", "9.5")
+    with c4:
+        st.metric("⭐ Opportunity","9.5 / 10","Excellent")
